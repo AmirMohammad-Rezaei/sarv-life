@@ -19,7 +19,7 @@ export default function HomePage() {
   return (
     <main className="page-wrap home-page">
       <section className="home-hero">
-        <img src="/images/hero-care.jpg" alt="همراهی مراقب با سالمند" />
+        <img src={`${import.meta.env.BASE_URL}images/hero-care.jpg`} alt="همراهی مراقب با سالمند" />
         <div className="home-hero-overlay" />
         <div className="home-hero-content">
           <span className="eyebrow">باشگاه مشتریان بنیاد فرزانگان عمارت ماندگار دوران</span>
@@ -59,7 +59,7 @@ export default function HomePage() {
 
       <section className="section-block home-split-section">
         <div className="split-photo-card">
-          <img src="/images/transport-van.jpg" alt="ون سبز مخصوص جابه‌جایی سالمندان با ویلچر" />
+          <img src={`${import.meta.env.BASE_URL}images/transport-van.jpg`} alt="ون سبز مخصوص جابه‌جایی سالمندان با ویلچر" />
           <div><span className="eyebrow">سفر امن و آسان</span><h2>حمل‌ونقل ویژه سالمندان</h2><p>ون مجهز به سامانه بالابر ویلچر برای سوار و پیاده شدن آسان‌تر.</p><Link to="/section/transport" className="button button--light">جزئیات سرویس <ArrowLeft size={16} /></Link></div>
         </div>
         <div className="split-info-card">

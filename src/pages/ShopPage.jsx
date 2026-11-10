@@ -19,7 +19,7 @@ export default function ShopPage() {
 
   return (
     <main className="page-wrap">
-      <PageHero eyebrow="فروشگاه سرو لایف" title="تأمین کالا و تجهیزات سالمندی" subtitle="محصولات کاربردی برای مراقبت، تحرک، ایمنی و زندگی روزمره؛ متناسب با نیاز هر فرد." image="/images/shop-banner.jpg" tone="green" action="مشاهده محصولات" to="#products" />
+      <PageHero eyebrow="فروشگاه سرو لایف" title="تأمین کالا و تجهیزات سالمندی" subtitle="محصولات کاربردی برای مراقبت، تحرک، ایمنی و زندگی روزمره؛ متناسب با نیاز هر فرد." image={`${import.meta.env.BASE_URL}images/shop-banner.jpg`} tone="green" action="مشاهده محصولات" to="#products" />
       <div className="shop-assurances">
         <div><ShieldCheck size={22} /><span><strong>انتخاب آگاهانه</strong><small>راهنمای انتخاب متناسب با نیاز</small></span></div>
         <div><PackageCheck size={22} /><span><strong>تنوع محصولات</strong><small>مصرفی و تجهیزات تخصصی</small></span></div>

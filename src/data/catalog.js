@@ -6,6 +6,8 @@ import {
   CalendarDays, Accessibility, BedDouble
 } from 'lucide-react';
 
+const IMG = `${import.meta.env.BASE_URL}images/`;
+
 export const navigation = [
   { label: 'خانه', to: '/' },
   { label: 'تأمین کالا', to: '/shop' },
@@ -65,22 +67,22 @@ export const products = [
   {
     id: 'smart-watch', name: 'دستبند و ساعت هوشمند سالمندان', category: 'gadgets',
     description: 'پایش فعالیت روزانه و قابلیت تماس اضطراری؛ ویژگی‌ها بسته به مدل متفاوت است.',
-    image: '/images/product-watch.jpg', icon: Smartphone, tag: 'گجت هوشمند'
+    image: `${IMG}product-watch.jpg`, icon: Smartphone, tag: 'گجت هوشمند'
   },
   {
     id: 'rollator', name: 'رولیتور و واکر کمکی سالمندان', category: 'mobility',
     description: 'کمک به حفظ تعادل هنگام راه رفتن؛ انتخاب نهایی بر اساس شرایط حرکتی فرد.',
-    image: '/images/product-rollator.jpg', icon: Accessibility, tag: 'کمک‌حرکتی'
+    image: `${IMG}product-rollator.jpg`, icon: Accessibility, tag: 'کمک‌حرکتی'
   },
   {
     id: 'adult-pads', name: 'پد و پوشینه بهداشتی بزرگسال', category: 'hygiene',
     description: 'محصولات بهداشتی با اندازه‌ها و قدرت جذب متنوع برای مراقبت روزانه.',
-    image: '/images/product-pads.jpg', icon: PackageCheck, tag: 'بهداشت و مراقبت'
+    image: `${IMG}product-pads.jpg`, icon: PackageCheck, tag: 'بهداشت و مراقبت'
   },
   {
     id: 'pill-box', name: 'جعبه قرص هفتگی و یادآور دارو', category: 'gadgets',
     description: 'برای نظم‌دهی به برنامه دارویی و کاهش احتمال فراموشی نوبت‌ها.',
-    image: '/images/product-pillbox.jpg', icon: ClipboardList, tag: 'مدیریت دارو'
+    image: `${IMG}product-pillbox.jpg`, icon: ClipboardList, tag: 'مدیریت دارو'
   },
   {
     id: 'bath-chair', name: 'صندلی حمام و تجهیزات ایمنی', category: 'mobility',
@@ -95,22 +97,22 @@ export const products = [
   {
     id: 'pressure-monitor', name: 'فشارسنج دیجیتال بازویی', category: 'gadgets',
     description: 'برای پایش خانگی فشار خون؛ اندازه‌گیری و تفسیر نتایج طبق راهنمای پزشک.',
-    image: '/images/preasure-measuring.jpg', emoji: '🩺', icon: HeartPulse, tag: 'پایش سلامت'
+    image: `${IMG}preasure-measuring.jpg`, emoji: '🩺', icon: HeartPulse, tag: 'پایش سلامت'
   },
   {
     id: 'wheelchair', name: 'ویلچر دستی تاشو', category: 'mobility',
     description: 'گزینه‌ای برای جابه‌جایی؛ ابعاد، وزن و نوع چرخ با نیاز کاربر تطبیق داده می‌شود.',
-    image: '/images/manual-weelchair.jpg', emoji: '♿', icon: Accessibility, tag: 'تجهیزات حرکتی'
+    image: `${IMG}manual-weelchair.jpg`, emoji: '♿', icon: Accessibility, tag: 'تجهیزات حرکتی'
   },
   {
     id: 'care-bed', name: 'تخت مراقبتی و تشک مواج', category: 'mobility',
     description: 'تجهیزات کمک‌مراقبتی برای شرایط خاص و مراقبت طولانی‌مدت.',
-    image: '/images/toshak.jpg', emoji: '🛏️', icon: BedDouble, tag: 'مراقبت تخصصی'
+    image: `${IMG}toshak.jpg` , emoji: '🛏️', icon: BedDouble, tag: 'مراقبت تخصصی'
   },
   {
     id: 'daily-care', name: 'بسته ملزومات مصرفی مراقبت روزانه', category: 'consumables',
     description: 'اقلام پرمصرف مراقبت و بهداشت روزانه سالمندان.',
-    image: '/images/care.jpg', emoji: '🧴', icon: PackageCheck, tag: 'مصرف روزمره'
+    image: `${IMG}care.jpg`, emoji: '🧴', icon: PackageCheck, tag: 'مصرف روزمره'
   }
 ];
 
