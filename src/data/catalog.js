@@ -131,17 +131,17 @@ export const articles = [
   {
     id: 1, title: '۵ راهکار ساده برای حفظ استقلال سالمندان در خانه', category: 'خودمراقبتی',
     excerpt: 'با چند تغییر کوچک در محیط خانه می‌توان انجام کارهای روزمره را ایمن‌تر و آسان‌تر کرد.',
-    readTime: '۵ دقیقه مطالعه', image: '/images/knowledge.jpg', icon: Home
+    readTime: '۵ دقیقه مطالعه', image: `${IMG}knowledge.jpg`, icon: Home
   },
   {
     id: 2, title: 'تغذیه متعادل در دوران سالمندی چه ویژگی‌هایی دارد؟', category: 'سلامت و تغذیه',
     excerpt: 'نکاتی عمومی برای برنامه غذایی متنوع، آب‌رسانی مناسب و توجه به نیازهای فردی.',
-    readTime: '۷ دقیقه مطالعه', image: '/images/food.jpg', icon: Utensils
+    readTime: '۷ دقیقه مطالعه', image: `${IMG}food.jpg`, icon: Utensils
   },
   {
     id: 3, title: 'چطور با سالمند درباره دریافت کمک صحبت کنیم؟', category: 'خانواده',
     excerpt: 'گفت‌وگویی محترمانه که استقلال، انتخاب و احساس امنیت سالمند را حفظ می‌کند.',
-    readTime: '۴ دقیقه مطالعه', image: '/images/hero-care.jpg', icon: MessageCircle
+    readTime: '۴ دقیقه مطالعه', image: `${IMG}hero-care.jpg`, icon: MessageCircle
   }
 ];
 

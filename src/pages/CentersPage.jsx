@@ -6,10 +6,11 @@ import CategoryCard from '../components/CategoryCard.jsx';
 import ContactCTA from '../components/ContactCTA.jsx';
 import { centerItems } from '../data/catalog.js';
 
+const IMG = `${import.meta.env.BASE_URL}images/`;
 export default function CentersPage() {
   return (
     <main className="page-wrap">
-      <PageHero eyebrow="مراکز تخصصی سرو لایف" title="مراقبت، تعامل و تجربه زندگی باکیفیت‌تر" subtitle="دسترسی به خدمات روزانه، اقامت موقت، بازتوانی، فعالیت اجتماعی و برنامه‌های اوقات فراغت سالمندان." image="/images/knowledge.jpg" imagePosition="left center" tone="green" action="مشاهده بخش‌ها" to="#center-categories" />
+      <PageHero eyebrow="مراکز تخصصی سرو لایف" title="مراقبت، تعامل و تجربه زندگی باکیفیت‌تر" subtitle="دسترسی به خدمات روزانه، اقامت موقت، بازتوانی، فعالیت اجتماعی و برنامه‌های اوقات فراغت سالمندان." image={`${IMG}knowledge.jpg`} imagePosition="left center" tone="green" action="مشاهده بخش‌ها" to="#center-categories" />
       <section className="section-block" id="center-categories">
         <SectionHeading eyebrow="خدمات و مراکز" title="فضاهایی برای مراقبت و مشارکت اجتماعی" subtitle="هر بخش می‌تواند با توجه به نیاز سالمند و خانواده انتخاب شود." />
         <div className="center-grid">{centerItems.map((item, index) => <CategoryCard key={item.slug} item={item} numbered={index + 1} />)}</div>

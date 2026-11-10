@@ -5,6 +5,8 @@ import PageHero from '../components/PageHero.jsx';
 import ContactCTA from '../components/ContactCTA.jsx';
 import CategoryCard from '../components/CategoryCard.jsx';
 
+const IMG = `${import.meta.env.BASE_URL}images/`;
+
 const pageImages = {
   transport: '/images/transport-van.jpg',
   'home-care': '/images/hero-care.jpg',
@@ -20,7 +22,7 @@ export default function CategoryDetailPage() {
   if (!item) return <main className="page-wrap"><div className="empty-state"><h2>این بخش پیدا نشد</h2><Link to="/" className="button button--primary">بازگشت به خانه</Link></div></main>;
   const Icon = item.icon || Home;
   const parent = item.parent || (centerItems.some((x) => x.slug === slug) ? 'مراکز تخصصی' : serviceItems.some((x) => x.slug === slug) ? 'خدمات تخصصی' : 'سرو لایف');
-  const image = pageImages[slug] || (parent === 'مراکز تخصصی' ? '/images/knowledge.jpg' : '/images/caregiver.jpg');
+  const image = pageImages[slug] || (parent === 'مراکز تخصصی' ? `${IMG}knowledge.jpg` : `${IMG}caregiver.jpg`);
   const related = slug === 'transport' || slug === 'home-care' || slug === 'home-treatment' || slug === 'specialist-clinics'
     ? serviceItems.filter((x) => x.slug !== slug).slice(0, 3)
     : slug === 'senior-tours' || slug === 'leisure-entertainment' || slug === 'volunteer-activities' || slug === 'respite-rehabilitation' || slug === 'residential-care' || slug === 'day-care'

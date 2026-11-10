@@ -7,10 +7,12 @@ import ContactCTA from '../components/ContactCTA.jsx';
 import ContactForm from '../components/ContactForm.jsx';
 import { courses } from '../data/catalog.js';
 
+const IMG = `${import.meta.env.BASE_URL}images/`;
+
 export default function EducationPage() {
   return (
     <main className="page-wrap">
-      <PageHero eyebrow="آموزش و توانمندسازی" title="یادگیری در هر سن، برای زندگی بهتر" subtitle="آموزش خانواده‌ها و علاقه‌مندان به حوزه مراقبت سالمندی؛ از مهارت‌های روزمره تا مسیرهای حرفه‌ای." image="/images/education.jpg" imagePosition="left center" tone="cream" action="مشاهده دوره‌ها" to="#courses" />
+      <PageHero eyebrow="آموزش و توانمندسازی" title="یادگیری در هر سن، برای زندگی بهتر" subtitle="آموزش خانواده‌ها و علاقه‌مندان به حوزه مراقبت سالمندی؛ از مهارت‌های روزمره تا مسیرهای حرفه‌ای." image={`${IMG}education.jpg`} imagePosition="left center" tone="cream" action="مشاهده دوره‌ها" to="#courses" />
       <section className="section-block education-audiences">
         <SectionHeading eyebrow="دو مسیر آموزشی" title="آموزش متناسب با نقش شما" subtitle="محتوا و مسیر یادگیری بر اساس نیاز خانواده یا علاقه‌مندی حرفه‌ای انتخاب می‌شود." />
         <div className="audience-grid">

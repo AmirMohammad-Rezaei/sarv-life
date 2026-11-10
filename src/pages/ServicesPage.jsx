@@ -6,6 +6,7 @@ import ServiceFeature from '../components/ServiceFeature.jsx';
 import ContactForm from '../components/ContactForm.jsx';
 import { serviceItems } from '../data/catalog.js';
 
+const IMG = `${import.meta.env.BASE_URL}images/`;
 const transportHighlights = [
   'مناسب برای سالمندانی که با ویلچر جابه‌جا می‌شوند',
   'بالابر یا سامانه مخصوص برای ورود و خروج ویلچر از ون',
@@ -15,13 +16,13 @@ const transportHighlights = [
 export default function ServicesPage() {
   return (
     <main className="page-wrap">
-      <PageHero eyebrow="خدمات تخصصی سرو لایف" title="مراقبت حرفه‌ای، در کنار شما" subtitle="از مراقبت در منزل تا خدمات درمانی، کلینیک‌های تخصصی و حمل‌ونقل ویژه سالمندان." image="/images/hero-care.jpg" tone="sage" action="درخواست راهنمایی" to="#contact-form" />
+      <PageHero eyebrow="خدمات تخصصی سرو لایف" title="مراقبت حرفه‌ای، در کنار شما" subtitle="از مراقبت در منزل تا خدمات درمانی، کلینیک‌های تخصصی و حمل‌ونقل ویژه سالمندان." image={`${IMG}hero-care.jpg`} tone="sage" action="درخواست راهنمایی" to="#contact-form" />
       <section className="section-block">
         <SectionHeading eyebrow="خدمات ما" title="یک مسیر ساده برای دسترسی به خدمات تخصصی" subtitle="خدمت موردنیازتان را انتخاب کنید تا جزئیات و شرایط دریافت آن را ببینید." />
         <div className="service-list-grid">{serviceItems.map((item, index) => <ServiceFeature key={item.slug} item={item} index={index} />)}</div>
       </section>
       <section className="transport-feature-section">
-        <div className="transport-photo"><img src="/images/transport-van.jpg" alt="ون سبز مجهز به بالابر ویلچر برای حمل‌ونقل سالمندان" /><span className="transport-photo-label"><BusFront size={16} /> ناوگان حمل‌ونقل ویژه</span></div>
+        <div className="transport-photo"><img src={`${IMG}transport-van.jpg`} alt="ون سبز مجهز به بالابر ویلچر برای حمل‌ونقل سالمندان" /><span className="transport-photo-label"><BusFront size={16} /> ناوگان حمل‌ونقل ویژه</span></div>
         <div className="transport-copy">
           <span className="eyebrow">حمل‌ونقل ویژه سالمندان</span>
           <h2>سفر ایمن‌تر، بدون دشواری جابه‌جایی ویلچر</h2>

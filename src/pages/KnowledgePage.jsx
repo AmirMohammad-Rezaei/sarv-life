@@ -6,10 +6,12 @@ import CategoryCard from '../components/CategoryCard.jsx';
 import ArticleCard from '../components/ArticleCard.jsx';
 import { knowledgeTopics, articles } from '../data/catalog.js';
 
+const IMG = `${import.meta.env.BASE_URL}images/`;
+
 export default function KnowledgePage() {
   return (
     <main className="page-wrap">
-      <PageHero eyebrow="پایگاه دانش سرو لایف" title="دانش، کلید زندگی سالم‌تر" subtitle="مقالات، راهنماها و محتوای آموزشی برای سالمندان، خانواده‌ها و مراقبان." image="/images/knowledge.jpg" imagePosition="left center" tone="sage" action="مرور مطالب" to="#articles" />
+      <PageHero eyebrow="پایگاه دانش سرو لایف" title="دانش، کلید زندگی سالم‌تر" subtitle="مقالات، راهنماها و محتوای آموزشی برای سالمندان، خانواده‌ها و مراقبان." image={`${IMG}knowledge.jpg`} imagePosition="left center" tone="sage" action="مرور مطالب" to="#articles" />
       <section className="section-block">
         <SectionHeading eyebrow="دسته‌بندی محتوا" title="از کجا شروع کنیم؟" subtitle="موضوع موردنظر را انتخاب کنید تا به راهنماهای مرتبط برسید." />
         <div className="topic-grid">
